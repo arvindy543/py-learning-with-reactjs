@@ -22,7 +22,7 @@ const ProductList = () => {
 
   if (loading) return <p>Loading products...</p>;
 
-  if (!products || products.length === 0) return <p>No products available</p>;
+  if (!products || products.length === 0) return <p>No products found...</p>;
 
   return (
     <div style={styles.container}>
