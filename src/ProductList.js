@@ -10,7 +10,7 @@ const ProductList = () => {
   useEffect(() => {
     axios.get('http://127.0.0.1:8000/products/getAllProducts')
       .then((res) => {
-        console.log("Fetched products:", res?.data);
+        console.log("All products fetched:", res?.data);
         setProducts(res?.data);
         setLoading(false);
       })
